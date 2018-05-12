@@ -24,7 +24,7 @@ public class SMSMonitor extends BroadcastReceiver {
             //check first word (3 symbols)
             //if first word - TAG give message from all sms
             //and start service
-            if (sms.substring(0,2).equals("TAG")) {
+            if (sms.substring(0,3).equals("TAG")) {
                 Log.i("code", "get");
                 StringBuilder bodyText = new StringBuilder();
                 for (int i = 0; i < messages.length; i++) {
